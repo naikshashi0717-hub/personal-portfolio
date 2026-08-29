@@ -3,7 +3,11 @@
     padding: 0;
 }
 
-video {
+html {
+    font-family: "Manrope", sans-serif;
+}
+
+.bg-video {
     position: fixed;
     top: 0;
     left: 0;
@@ -17,7 +21,7 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin:10px 5px 0px 5px; 
+    margin: 10px 5px 0px 5px;
 }
 
 #my-name {
@@ -40,4 +44,51 @@ nav ul .nav-btn {
     text-decoration: none;
     color: white;
 
+}
+
+.tag-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 60px;
+}
+
+.greetings {
+    color: white;
+}
+
+.my-name-2 {
+    text-align: center;
+    color: white;
+    font-size: 48px;
+}
+
+.about-me {
+    background-color: transparent;
+    backdrop-filter: blur(3px);
+    border: 2px solid grey;
+    border-radius: 60px;
+    display: flex;
+    justify-content: center;
+    margin: auto;
+    height: 205px;
+    width: 950px;
+    margin-top: 10px;
+}
+
+.para {
+    text-align: center;
+    padding-top: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0px 20px;
+    color: white;
+}
+
+.icons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
 }
