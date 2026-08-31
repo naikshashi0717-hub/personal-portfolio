@@ -158,7 +158,7 @@ nav ul .nav-btn {
 .greetings span::before{
     content: " ";
     color: white;
-    animation: greetings 10s linear infinite ;
+    animation: greetings 10s  infinite ;
 }
 
 @keyframes greetings {
