@@ -21,11 +21,10 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin: 10px 5px 0px 5px;
+    margin: 0px 15px;
     height: 50px;
     position: sticky;
     top: 0;
-    margin: 0;
 }
 
 main {
@@ -54,7 +53,7 @@ main {
 nav ul {
     display: flex;
     justify-content: space-evenly;
-    gap: 5px;
+    gap: 12px;
 }
 
 li {
@@ -75,12 +74,15 @@ nav ul .nav-btn {
 
 .greetings {
     color: white;
+    font-size: 50px;
+    font-weight: 900;
 }
 
 .my-name-2 {
     text-align: center;
     color: white;
-    font-size: 48px;
+    font-size: 5rem;
+    font-weight: 900;
 }
 
 .about-me {
@@ -109,6 +111,7 @@ nav ul .nav-btn {
 }
 
 .nav-btn {
+    border: 1px solid white;
     backdrop-filter: blur(10px);
     height: 25px;
     border-radius: 20px;
@@ -149,47 +152,80 @@ nav ul .nav-btn {
     font-weight: 600;
 }
 
-.greetings span{
+.greetings span {
     content: "Morning";
-    position:relative;
+    position: relative;
     color: white;
 }
 
-.greetings span::before{
+.greetings span::before {
     content: " ";
     color: white;
-    animation: greetings 10s  infinite ;
+    animation: greetings 10s infinite;
 }
 
 @keyframes greetings {
 
-    0%, 30%{
+    0%,
+    30% {
         content: "Morning";
     }
-    31%, 70%{
-        content: "Afernoon";
+
+    31%,
+    70% {
+        content: "Afternoon";
     }
-    71%, 100%{
+
+    71%,
+    100% {
         content: "Evening";
     }
-    
+
 }
 
-.greetings span::after{
+.greetings span::after {
     content: " ";
-    
     position: absolute;
     height: 110%;
     width: 5%;
     border-left: 2px solid white;
-    animation: cursor 0.5s infinite alternate ;
+    animation: cursor 0.5s infinite alternate;
 }
 
 @keyframes cursor {
-    0%{
+    0% {
         border-left: none;
-    } 
-    100%{
-        border-left: 2px solid white;
-    }   
+    }
+
+    100% {
+        border-left: 3px solid white;
+    }
+}
+
+.my-name-2 {
+    background: linear-gradient(90deg, orange 0%,
+            #ffcc66 25%,
+            aqua 50%,
+            #6699ff 75%,
+            blue 100%);
+    /* background-size: 200% auto; */
+
+    -webkit-background-clip: text;
+    background-clip: text;
+
+    color: transparent;
+    -webkit-text-fill-color: transparent;
+
+
+    animation: textFlow 7s linear infinite;
+}
+
+@keyframes textFlow {
+    from {
+        background-position: 0% center;
+    }
+
+    to {
+        background-position: 200% center;
+    }
 }
