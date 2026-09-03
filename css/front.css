@@ -46,8 +46,10 @@ main {
     background-color: transparent;
     border-radius: 45px;
     height: 30px;
-    width: 150px;
+    width: 180px;
+    margin-top: -8px;
     backdrop-filter: blur(29px);
+    letter-spacing: 3px;
 }
 
 nav ul {
@@ -94,7 +96,7 @@ nav ul .nav-btn {
     justify-content: center;
     margin: auto;
     height: 205px;
-    width: 950px;
+    width: 920px;
     margin-top: 10px;
 }
 
@@ -203,11 +205,11 @@ nav ul .nav-btn {
 }
 
 .my-name-2 {
-    background: linear-gradient(90deg, orange 0%,
-            #ffcc66 25%,
-            aqua 50%,
-            #6699ff 75%,
-            blue 100%);
+    background: linear-gradient(90deg, orange 25%,
+            #ffcc66 50%,
+            aqua 75%,
+            #6699ff 100%
+                    );
     background-size:300% 300%;
 
     -webkit-background-clip: text;
@@ -217,7 +219,7 @@ nav ul .nav-btn {
     -webkit-text-fill-color: transparent;
 
 
-    animation: textFlow 7s linear infinite;
+    animation: textFlow 5s linear infinite;
 }
 
 @keyframes textFlow {
@@ -230,4 +232,48 @@ nav ul .nav-btn {
    100%{
     background-position: 0% 50%;
   }
+}
+
+#my-name {
+    position: relative;
+    display:inline-block;
+}
+#my-name::after{
+    content: "";
+    position:absolute;
+    left:0;
+    bottom:0;
+    width:0%;
+    height:3px;
+    background-color: white;
+    animation: txtline 5s  1  forwards;
+    animation-delay: 2s;
+}
+
+@keyframes txtline {
+    from{
+        width: 0%;
+    }
+    to{
+        width: 100%;
+    }
+}
+
+.nav-btn {
+    transition: all 0.3s ease-in-out;
+}
+
+.nav-btn:hover {
+  background: linear-gradient(135deg, #11433f 0%, #165851 50%, #86a19e 75%, rgb(187, 210, 222) 100%);
+
+    color: white;
+    transform: scale(1.1);
+}
+
+.about-me{
+    transition: all 0.3s ease-in-out;
+}
+
+.about-me:hover{
+    transform: scale(1.005);
 }
