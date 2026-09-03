@@ -264,7 +264,7 @@ nav ul .nav-btn {
 }
 
 #my-name {
-    background: linear-gradient(126deg, white 0%, black 50%, white 100%);
+    background: linear-gradient(126deg, white 25%, black 50%, white 100%);
     background-size: 300% 300%;
 
     -webkit-background-clip: text;
