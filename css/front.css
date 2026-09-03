@@ -209,9 +209,8 @@ nav ul .nav-btn {
     background: linear-gradient(90deg, orange 25%,
             #ffcc66 50%,
             aqua 75%,
-            #6699ff 100%
-                    );
-    background-size:300% 300%;
+            #6699ff 100%);
+    background-size: 300% 300%;
 
     -webkit-background-clip: text;
     background-clip: text;
@@ -224,39 +223,71 @@ nav ul .nav-btn {
 }
 
 @keyframes textFlow {
-  0%{
-    background-position: 0% 50%;
-  }
-   50%{
-    background-position: 100% 50%;
-  }
-   100%{
-    background-position: 0% 50%;
-  }
+    0% {
+        background-position: 0% 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+
+    100% {
+        background-position: 0% 50%;
+    }
 }
 
 #my-name {
     position: relative;
-    display:inline-block;
+    display: inline-block;
 }
-#my-name::after{
+
+#my-name::after {
     content: "";
-    position:absolute;
-    left:0;
-    bottom:0;
-    width:0%;
-    height:3px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 0%;
+    height: 3px;
     background-color: white;
-    animation: txtline 5s  1  forwards;
+    animation: txtline 5s 1 forwards;
     animation-delay: 2s;
 }
 
 @keyframes txtline {
-    from{
+    from {
         width: 0%;
     }
-    to{
+
+    to {
         width: 100%;
+    }
+}
+
+#my-name {
+    background: linear-gradient(126deg, white 0%, black 50%, white 100%);
+    background-size: 300% 300%;
+
+    -webkit-background-clip: text;
+    background-clip: text;
+
+    color: transparent;
+    -webkit-text-fill-color: transparent;
+
+
+    animation: textFlow 10s  infinite alternate-reverse;
+}
+
+@keyframes textFlow {
+    0% {
+        background-position: 0% 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+
+    100% {
+        background-position: 0% 50%;
     }
 }
 
@@ -265,16 +296,16 @@ nav ul .nav-btn {
 }
 
 .nav-btn:hover {
-  background: linear-gradient(135deg, #11433f 0%, #165851 50%, #86a19e 100%);
+    background: linear-gradient(135deg, #11433f 0%, #165851 50%, #86a19e 100%);
 
     color: white;
     transform: scale(1.1);
 }
 
-.about-me{
+.about-me {
     transition: all 0.3s ease-in-out;
 }
 
-.about-me:hover{
+.about-me:hover {
     transform: scale(1.005);
 }
