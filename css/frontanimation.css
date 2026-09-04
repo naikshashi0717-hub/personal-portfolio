@@ -12,18 +12,13 @@
 
 @keyframes greetings {
 
-    0%,
-    30% {
+    0%,30% {
         content: "Morning";
     }
-
-    31%,
-    70% {
+    31%,70% {
         content: "Afternoon";
     }
-
-    71%,
-    100% {
+    71%,100% {
         content: "Evening";
     }
 
@@ -49,10 +44,7 @@
 }
 
 .my-name-2 {
-    background: linear-gradient(90deg, orange 25%,
-            #ffcc66 50%,
-            aqua 75%,
-            #6699ff 100%);
+    background: linear-gradient(90deg, orange 25%,#ffcc66 50%, aqua 75%, #6699ff 100%);
     background-size: 300% 300%;
 
     -webkit-background-clip: text;
@@ -117,10 +109,10 @@
     -webkit-text-fill-color: transparent;
 
 
-    animation: textFlow 10s  infinite alternate-reverse;
+    animation: txtFlow 10s  infinite alternate-reverse;
 }
 
-@keyframes textFlow {
+@keyframes txtFlow {
     0% {
         background-position: 0% 50%;
     }
@@ -150,5 +142,5 @@
 }
 
 .about-me:hover {
-    transform: scale(1.005);
+    transform: scale(1.005)
 }
