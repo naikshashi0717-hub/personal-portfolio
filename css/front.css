@@ -27,10 +27,6 @@ header {
     top: 0;
 }
 
-main {
-    flex: 1;
-}
-
 /* important */
 .site {
     min-height: 100dvh;
@@ -49,12 +45,12 @@ main {
     width: 200px;
     margin-top: -8px;
     backdrop-filter: blur(29px);
-    letter-spacing: 3px;
+    letter-spacing: 4px;
 }
 
 nav ul {
     display: flex;
-    justify-content: space-evenly;
+    /* justify-content: space-between; */
     gap: 12px;
 }
 

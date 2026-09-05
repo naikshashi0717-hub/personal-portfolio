@@ -1,5 +1,5 @@
 .greetings span {
-    content: "Morning";
+    /* content: ""; */
     position: relative;
     color: white;
 }
@@ -35,11 +35,13 @@
 
 @keyframes cursor {
     0% {
-        border-left: none;
+        /* border-left: none; */
+        opacity: 0;
     }
 
     100% {
-        border-left: 3px solid white;
+        /* border-left: 3px solid white; */
+        opacity: 1;
     }
 }
 
