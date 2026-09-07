@@ -74,35 +74,8 @@
 }
 
 #my-name {
-    position: relative;
-    display: inline-block;
-}
-
-#my-name::after {
-    content: "";
-    position: absolute;
-    left: 0;
-    bottom: 0;
-    width: 0%;
-    height: 3px;
-    background-color: white;
-    animation: txtline 5s 1 forwards;
-    animation-delay: 2s;
-}
-
-@keyframes txtline {
-    from {
-        width: 0%;
-    }
-
-    to {
-        width: 100%;
-    }
-}
-
-#my-name {
     background: linear-gradient(126deg, white 25%, black 50%, white 100%);
-    background-size: 300% 300%;
+    background-size: 200% 200%;
 
     -webkit-background-clip: text;
     background-clip: text;
@@ -111,16 +84,16 @@
     -webkit-text-fill-color: transparent;
 
 
-    animation: txtFlow 10s  infinite alternate-reverse;
+    animation: txtFlow 7s  infinite alternate-reverse;
 }
 
 @keyframes txtFlow {
     0% {
-        background-position: 0% 50%;
+        background-position: 50% 50%;
     }
 
     50% {
-        background-position: 100% 50%;
+        background-position: 100% 0%;
     }
 
     100% {
@@ -134,9 +107,14 @@
 
 .nav-btn:hover {
     background: linear-gradient(135deg, #11433f 0%, #165851 50%, #86a19e 100%);
-
     color: white;
+    text-decoration: underline;
     transform: scale(1.1);
+    
+}
+
+.nav-btn:hover::after{
+    width: 100;
 }
 
 .about-me {
@@ -145,4 +123,19 @@
 
 .about-me:hover {
     transform: scale(1.005)
+}
+
+.icons{
+    transition: all 0.5s ease-in-out ;
+}
+.icons:hover{
+    transform: scale(1.01);
+}
+
+.logo{
+    transition: all 0.2s ease-in-out;
+}
+.logo:hover{
+    border: 1px solid black;
+    transform: scale(1.1);
 }
