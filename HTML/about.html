@@ -5,12 +5,17 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ABOUT ME</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900;1000&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" href="/CSS/about.css">
 </head>
 
 <body>
     <header>
-        <a href="front.html"><img  src="/IMAGES/back.jpg" alt="back"></a>
+        <a class="back-btn" href="front.html"><img src="/IMAGES/back.jpg" alt="back"></a>
         <nav>
             <ul>
                 <li><a class="nav-btn" href="about.html">ABOUT</a></li>
@@ -20,17 +25,26 @@
             </ul>
         </nav>
     </header>
+    <hr>
     <main>
 
-        <video class="bg-video" src="/IMAGES/bg.mp4"></video>
+        <video class="bg-video" src="/IMAGES/bg.mp4" loop autoplay muted></video>
         <section>
-            <p>About Me</p>
-            <p>
-                Hello, I am Shashidhara Venkatesh Naik, a BCA Graduate of 2026.
-                I am passionate about Frontend Development and currently seeking opportunities as a UI Trainee.
-                I am qurious to work with the industry level projects and represent my learning journey in web
-                development and lead a team with you in future. Shorthand(Shashi Naik)
-            </p>
+            <p class="about-heading">ABOUT ME</p>
+            <div class="full-about">
+                <div class="about-me">
+                    <p class="para">
+                        Hello, I am Shashidhara Venkatesh Naik, a BCA Graduate of 2026.
+                        I am passionate about Frontend Development and currently seeking opportunities as a UI Trainee.
+                        I am qurious to work with the industry level projects and represent my learning journey in web
+                        development and lead a team with you in future. Shorthand(Shashi Naik)
+                    </p>
+                </div>
+                <div class="hobbies">
+                    <p class="hobbies-heading">Hobbies</p>
+                    <p class="hobbies-para"></p>
+                </div>
+            </div>
         </section>
 
     </main>
