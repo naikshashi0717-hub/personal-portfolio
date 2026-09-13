@@ -145,6 +145,7 @@ nav ul .nav-btn {
     display: flex;
     justify-content: center;
     margin: auto;
+    margin-bottom: 10px;
 }
 
 .copy-para {

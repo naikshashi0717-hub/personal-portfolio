@@ -109,8 +109,7 @@
     background: linear-gradient(135deg, #11433f 0%, #165851 50%, #86a19e 100%);
     color: white;
     text-decoration: underline;
-    transform: scale(1.1);
-    
+    transform: scale(1.03);
 }
 
 .nav-btn:hover::after{
@@ -126,10 +125,10 @@
 }
 
 .icons{
-    transition: all 0.5s ease-in-out ;
+    transition: all 0.2s ease-in-out ;
 }
 .icons:hover{
-    transform: scale(1.01);
+    transform: scale(1.005);
 }
 
 .logo{
