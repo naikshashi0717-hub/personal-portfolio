@@ -75,6 +75,8 @@ li {
 
     color: transparent;
     -webkit-text-fill-color: transparent;
+
+    margin: 15px;
 }
 
 .full-about {
@@ -83,52 +85,74 @@ li {
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr;
     gap: 20px;
-    height: 45vh;
-    width: 90vw;
-    margin: 60px 80px;
+    height: 50vh;
+    width: 77vw;
+    margin: 60px 170px;
 }
 
-.para{
+.para {
     grid-row: 1/3;
-    border:2px solid white;
+    border: 2px solid white;
     backdrop-filter: blur(20px);
     margin: 0px 5px;
     border-radius: 30px;
-    width: 50vw;
+    width: 40vw;
 }
 
-.hobbies{
-    border:2px solid white;
+.hobbies {
+    border: 2px solid white;
     backdrop-filter: blur(20px);
     border-radius: 30px;
 }
 
-.something{
-    border:2px solid white;
+.something {
+    border: 2px solid white;
     backdrop-filter: blur(20px);
     border-radius: 30px;
 }
 
-.about-me{
+.about-me {
     text-align: center;
     margin: 15px;
     color: white;
     font-size: 15px;
 }
 
-.hobbies-head{
-    margin: 15px;
-    list-style: circle;
+.hobbies-head {
+    display: list-item;
+    list-style: square;
     text-decoration: underline;
     color: white;
-    font-size: 20px; 
-    text-decoration: underline 2px;
+    font-size: 17px;
+    font-weight: 600;
+    text-decoration: underline 1px;
+    margin-top: 15px;
+    margin-left: 30px;
 }
 
-.something-add{
-    margin: 15px; 
-    list-style:inside; 
-    text-decoration: underline 2px;
+.something-add {
+    /* display: list-item;
+    list-style: square;
+    list-style: inside;
+    text-decoration: underline 1px;
     color: white;
-    font-size: 20px; 
+    font-size: 17px;
+    margin-top: 15px;
+    margin-left: 30px; */
+}
+
+.games{
+    color: white;
+    font-size: 15px;
+    margin-top: 10px;
+    margin-left: 30px;
+}
+
+.games-list{
+    list-style: disc inside;
+    font-weight: 500;
+}
+
+.hobby-explain{
+    margin-left: 45px;
 }
