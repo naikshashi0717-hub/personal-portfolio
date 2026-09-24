@@ -18,7 +18,23 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin: 20px 20px;
+    height: 50px;
+    position: sticky;
+    top: 0;
+    backdrop-filter: blur(50px);
+    z-index: 1;
+}
+
+#my-name {
+    color: white;
+    font-weight: 900;
+    font-size: 22px;
+    border-radius: 45px;
+    height: 30px;
+    width: 215px;
+    margin-top: -8px;
+    letter-spacing: 4px;
+    margin: 10px;
 }
 
 .bg-video {
@@ -31,10 +47,10 @@ header {
     z-index: -1;
 }
 
-
 nav ul {
     display: flex;
-    gap: 10px;
+    gap: 12px;
+    margin: 0px 10px;
 }
 
 li {
@@ -52,16 +68,6 @@ li {
     display: flex;
     justify-content: center;
     align-items: center;
-}
-
-.back-btn {
-    width: 50px;
-    height: 25px;
-    border-radius: 12px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    backdrop-filter: blur(10px);
 }
 
 .about-heading {
@@ -97,14 +103,14 @@ li {
     border: 1px solid white;
     backdrop-filter: blur(20px);
     margin: 0px 5px;
-    border-radius: 30px;
+    border-radius: 55px;
     width: 40vw;
 }
 
 .hobbies {
     border: 1px solid white;
     backdrop-filter: blur(20px);
-    border-radius: 30px;
+    border-radius: 50px;
 }
 
 
@@ -115,7 +121,7 @@ li {
     font-size: 20px;
 }
 
-.hobbies-head {
+#hobbies-head {
     display: list-item;
     list-style: square;
     color: white;
@@ -147,12 +153,12 @@ li {
 .intership {
     border: 1px solid white;
     backdrop-filter: blur(20px);
-    border-radius: 30px;
+    border-radius: 50px;
 }
 
-.intership-head {
+#intership-head {
     display: list-item;
-    list-style: square ;
+    list-style: square;
     text-decoration: underline 1px;
     color: white;
     font-size: 17px;
@@ -176,5 +182,41 @@ li {
     margin-top: 10px;
     margin-left: 30px;
     line-height: 28px;
+}
 
+.icons {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 20px;
+    background-color: transparent;
+    border: 2px solid white;
+    border-radius: 30px;
+    backdrop-filter: blur(10px);
+    height: 50px;
+    width: 300px;
+    margin: auto;
+    margin-bottom: 10px;
+}
+
+.logo {
+    background-color: transparent;
+    border-radius: 20px;
+    margin-top: 6px;
+    height: 25px;
+    width: 25px;
+}
+
+.copy-right {
+    display: flex;
+    justify-content: center;
+    margin: auto;
+}
+
+.copy-para {
+    color: white;
+}
+
+.full-footer{
+backdrop-filter: blur(5px);
 }

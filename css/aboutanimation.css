@@ -1,0 +1,83 @@
+#my-name {
+    background: linear-gradient(126deg, white 25%, black 50%, white 100%);
+    background-size: 200% 200%;
+
+    -webkit-background-clip: text;
+    background-clip: text;
+
+    color: transparent;
+    -webkit-text-fill-color: transparent;
+
+
+    animation: txtFlow 7s infinite alternate-reverse;
+}
+
+@keyframes txtFlow {
+    0% {
+        background-position: 50% 50%;
+    }
+
+    50% {
+        background-position: 100% 0%;
+    }
+
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+#hobbies-head {
+    background: linear-gradient(126deg, white 25%, grey 50%, white 100%);
+    background-size: 200% 100%;
+
+    -webkit-background-clip: text;
+    background-clip: text;
+
+    color: transparent;
+    -webkit-text-fill-color: transparent;
+
+
+    animation: txtFlow 7s infinite alternate-reverse;
+}
+
+@keyframes txtFlow {
+    0% {
+        background-position: 0% 50%;
+    }
+
+    50% {
+        background-position: 100% 0%;
+    }
+
+    100% {
+        background-position: 50% 0%;
+    }
+}
+
+#intership-head {
+    background: linear-gradient(126deg, white 25%, grey 50%, white 100%);
+    background-size: 200% 100%;
+
+    -webkit-background-clip: text;
+    background-clip: text;
+
+    color: transparent;
+    -webkit-text-fill-color: transparent;
+
+
+    animation: txtFlow 5s infinite alternate-reverse;
+}
+
+@keyframes txtFlow {
+    0% {
+        background-position: 0% 50%;
+    }
+
+    50% {
+        background-position: 100% 0%;
+    }
+
+    100% {
+        background-position: 50% 0%;
+    }
+}
