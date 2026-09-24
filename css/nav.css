@@ -1,4 +1,4 @@
-.nav-btn {
+/* .nav-btn {
     transition: all 0.3s ease-in-out;
 }
 
@@ -9,7 +9,29 @@
 
 .nav-btn:hover::after {
     width: 100;
+} */
+.nav-btn {
+    position: relative;
+    color: white;
+    text-decoration: none;
 }
 
+.nav-btn::after {
+    content: attr(text);
+    position: absolute;
+    left: 0;
+    top: 0;
 
+    text-decoration: underline white 2px;
+    color: orange;
 
+    width: 0;
+    overflow: hidden;
+    white-space: nowrap;
+
+    transition: width 1s ease;
+}
+
+.nav-btn:hover::after {
+    width: 100%;
+}
