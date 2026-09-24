@@ -1,0 +1,15 @@
+.nav-btn {
+    transition: all 0.3s ease-in-out;
+}
+
+.nav-btn:hover {
+    color: orange;
+    text-decoration: underline white;
+}
+
+.nav-btn:hover::after {
+    width: 100;
+}
+
+
+

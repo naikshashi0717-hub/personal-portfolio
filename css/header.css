@@ -1,0 +1,33 @@
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 50px;
+    position: sticky;
+    top: 0;
+    z-index: 1;
+    background-color: #0000001c;
+    backdrop-filter: blur(50px);
+}
+
+nav ul {
+    margin: 10px;
+    display: flex;
+    gap: 50px;
+}
+
+li {
+    list-style: none;
+}
+
+nav ul .nav-btn {
+    text-decoration: none;
+    color: white;
+}
+
+.nav-btn {
+    background-color: transparent;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

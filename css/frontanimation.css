@@ -46,7 +46,7 @@
 }
 
 .my-name-2 {
-    background: linear-gradient(90deg, orange 25%,#ffcc66 50%, aqua 75%, #6699ff 100%);
+    background: linear-gradient(90deg, orange 25%, rgb(255, 255, 255) 50%, #0bcd4c 100%);
     background-size: 300% 300%;
 
     -webkit-background-clip: text;
@@ -101,40 +101,4 @@
     }
 }
 
-.nav-btn {
-    transition: all 0.3s ease-in-out;
-}
 
-.nav-btn:hover {
-    background: linear-gradient(135deg, #11433f 0%, #165851 50%, #86a19e 100%);
-    color: white;
-    text-decoration: underline;
-    transform: scale(1.03);
-}
-
-.nav-btn:hover::after{
-    width: 100;
-}
-
-.about-me {
-    transition: all 0.3s ease-in-out;
-}
-
-.about-me:hover {
-    transform: scale(1.005)
-}
-
-.icons{
-    transition: all 0.2s ease-in-out ;
-}
-.icons:hover{
-    transform: scale(1.005);
-}
-
-.logo{
-    transition: all 0.2s ease-in-out;
-}
-.logo:hover{
-    border: 1px solid black;
-    transform: scale(1.1);
-}
