@@ -1,0 +1,20 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-family: "Manrope", sans-serif;
+}
+
+#my-name {
+    color: white;
+    font-weight: 900;
+    font-size: 22px;
+    border-radius: 45px;
+    height: 30px;
+    width: 215px;
+    margin-top: -8px;
+    letter-spacing: 4px;
+    margin: 10px;
+}
