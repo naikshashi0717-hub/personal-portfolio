@@ -6,30 +6,12 @@
     transform: scale(1.005)
 }
 
-.icons {
-    transition: all 0.2s ease-in-out;
-}
-
-.icons:hover {
-    transform: scale(1.005);
-}
-
-.logo {
-    transition: all 0.2s ease-in-out;
-}
-
-.logo:hover {
-    border: 1px solid black;
-    transform: scale(1.1);
-}
-
-
 .para {
     transition: all 0.3s ease-in-out;
 }
 
 .para:hover {
-    transform: scale(1.005)
+    transform: scale(1.005);
 }
 
 .intership {

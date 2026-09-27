@@ -42,3 +42,20 @@ footer{
     bottom: 0;
     width: 100%;
 }
+
+.icons {
+    transition: all 0.2s ease-in-out;
+}
+
+.icons:hover {
+    transform: scale(1.005);
+}
+
+.logo {
+    transition: all 0.2s ease-in-out;
+}
+
+.logo:hover {
+    border: 1px solid black;
+    transform: scale(1.1);
+}
