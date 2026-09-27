@@ -74,3 +74,11 @@ html {
     color: white;
     font-size: 20px;
 }
+
+.head-tag{
+    transition: all 0.3s ease-in-out;
+}
+
+.head-tag:hover{
+    text-decoration: underline white 2px;
+}
