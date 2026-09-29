@@ -25,3 +25,68 @@
         background-position: 0% 50%;
     }
 }
+
+
+.services-heading {
+    background: linear-gradient(90deg, orange 25%, rgb(255, 255, 255) 50%, #0bcd4c 100%);
+    background-size: 300% 300%;
+
+    -webkit-background-clip: text;
+    background-clip: text;
+
+    color: transparent;
+    -webkit-text-fill-color: transparent;
+
+
+    animation: textFlow 5s linear infinite;
+}
+
+@keyframes textFlow {
+    0% {
+        background-position: 0% 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+.list-head {
+    background: linear-gradient(126deg, white 25%, grey 50%, white 100%);
+    background-size: 200% 100%;
+
+    -webkit-background-clip: text;
+    background-clip: text;
+
+    color: transparent;
+    -webkit-text-fill-color: transparent;
+
+
+    animation: txtFlow 5s infinite alternate-reverse;
+}
+
+@keyframes txtFlow {
+    0% {
+        background-position: 0% 50%;
+    }
+
+    50% {
+        background-position: 100% 0%;
+    }
+
+    100% {
+        background-position: 50% 0%;
+    }
+}
+
+.food-container {
+    transition: all 0.3s ease-in-out;
+}
+
+.food-container:hover{
+    transform: scale(1.005);
+}
