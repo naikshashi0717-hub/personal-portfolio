@@ -90,3 +90,11 @@
 .food-container:hover{
     transform: scale(1.005);
 }
+
+.list-head{
+    transition: all 0.3s ease-in-out;
+}
+
+.list-head:hover{
+    text-decoration: underline white 2px;
+}
