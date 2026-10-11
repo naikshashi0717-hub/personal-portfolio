@@ -18,3 +18,25 @@ html {
     letter-spacing: 4px;
     margin: 10px;
 }
+
+.skill-tag {
+    text-align: center;
+    font-size: 33px;
+    font-weight: 900;
+    margin: 15px;
+}
+
+.head-tag {
+    display: list-item;
+    list-style: square inside;
+    text-decoration: underline 1px;
+    color: white;
+    font-size: 17px;
+    margin-top: 15px;
+    margin-left: 30px;
+}
+
+.full-container{
+    display: flex;
+    justify-content: center;
+}

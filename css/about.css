@@ -71,7 +71,7 @@ html {
 
 #hobbies-head {
     display: list-item;
-    list-style: square;
+    list-style: square inside;
     color: white;
     font-size: 17px;
     font-weight: 600;
@@ -106,7 +106,7 @@ html {
 
 #intership-head {
     display: list-item;
-    list-style: square;
+    list-style: square inside;
     text-decoration: underline 1px;
     color: white;
     font-size: 17px;
