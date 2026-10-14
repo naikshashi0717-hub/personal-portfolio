@@ -109,3 +109,19 @@
         background-position: 0% 50%;
     }
 }
+
+#hobbies-head{
+    transition: all 0.3s ease-in-out;
+}
+
+#hobbies-head:hover{
+    text-decoration: underline white 2px;
+}
+
+#intership-head{
+    transition: all 0.3s ease-in-out;
+}
+
+#intership-head:hover{
+    text-decoration: underline white 2px;
+}

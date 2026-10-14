@@ -7,6 +7,30 @@ html {
     font-family: "Manrope", sans-serif;
 }
 
+html,
+body {
+    min-height: 100%;
+    margin: 0;
+}
+
+body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+main {
+    flex: 1;
+}
+
+.site {
+    min-height: 100dvh;
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    grid-template-columns: minmax(0, 1fr);
+}
+
+
 #my-name {
     color: white;
     font-weight: 900;
@@ -19,6 +43,12 @@ html {
     margin: 10px;
 }
 
+.lang-tag {
+    list-style: none;
+    margin: 0px 50px;
+    font-size: 30px;
+} 
+
 .skill-tag {
     text-align: center;
     font-size: 33px;
@@ -26,17 +56,69 @@ html {
     margin: 15px;
 }
 
-.head-tag {
-    display: list-item;
-    list-style: square inside;
-    text-decoration: underline 1px;
-    color: white;
-    font-size: 17px;
-    margin-top: 15px;
-    margin-left: 30px;
+.lang-logo {
+    position: absolute;
+    display: flex;
+    border-radius: 20px;
+    height: 40px;
+    width: 40px;
 }
 
-.full-container{
+.para-lang {
+    margin: 10px;
+}
+
+.full-container {
+    width: 100%;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.full-container section {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 25px;
+}
+
+.lang-container {
+    width: 30vw;
+    height: 35vh;
+    padding: 20px;
+    box-sizing: border-box;
+    border: 1px solid white;
+    border-radius: 50px;
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(5px);
+}
+
+/* .progress-bar{
+    width: 100%;
+    padding: 3px;
+    background-color: white;
+    border: 1px solid black;
+    border-radius: 20px;
+}
+
+.progress-fill{
     display: flex;
     justify-content: center;
+    align-items: center;
+
+    height: 24px;
+    border-radius: 20px;
+    background-color: orange;
+    color: white;
+
+    animation: progress 0.4s ease-in-out;
 }
+
+@keyframes  progress{
+
+    0%{
+        width: 0%;
+    }
+    100%{
+        width: 70%;
+    }
+} */
+
